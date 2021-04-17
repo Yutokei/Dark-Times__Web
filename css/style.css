@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'TT2020';
+  src: url("https://ctrlcctrlv.github.io/TT2020/dist/TT2020Base-Regular.woff2") format("woff2"); }
+
+/*bleu-gris*/
+/*bleu Nicolas*/
+/*blanc argent*/
+/*rose anonyme*/
+html {
+  width: 100%;
+  background-color: black;
+  font-family: 'TT2020';
+  color: white; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+header {
+  margin-bottom: 4rem; }
+  header .banner {
+    width: 100%;
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'TT2020';
+    border-bottom: 0.05rem #D3D3D3 solid;
+    margin-bottom: 0.5rem; }
+    header .banner__title {
+      color: #D3D3D3; }
+  header .nav-flexbox {
+    margin: 1rem 0rem 3rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+    header .nav-flexbox__box {
+      font-size: 2rem;
+      margin: 0rem 0.5rem 1rem 0.5rem;
+      border-bottom: #D3D3D3 0.05rem solid;
+      background: #a9af34;
+      background: linear-gradient(29deg, rgba(169, 175, 52, 0.43181) 0%, rgba(232, 211, 8, 0.485032) 50%);
+      background-position: left;
+      background-size: 0rem 0rem;
+      background-repeat: no-repeat; }
+      header .nav-flexbox__box:hover {
+        animation: nav-hover-effect .5s both ease; }
+
+@keyframes nav-hover-effect {
+  from {
+    background-size: 0.2rem 1.5rem;
+    transform: scale(1); }
+  to {
+    background-size: 100% 40%;
+    transform: scale(1.2) skew(10deg, -0.1deg); } }
+      header .nav-flexbox__box--social-network {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        width: 20rem;
+        border: none;
+        background: none; }
+        header .nav-flexbox__box--social-network:hover {
+          animation: none; }
+        header .nav-flexbox__box--social-network__box {
+          width: fit-content;
+          transition: transform .25s ease-in; }
+          header .nav-flexbox__box--social-network__box:hover {
+            transform: scale(1.3); }
+          header .nav-flexbox__box--social-network__box--facebook {
+            color: #3b5998; }
+          header .nav-flexbox__box--social-network__box--twitter {
+            color: #00acee; }
+          header .nav-flexbox__box--social-network__box--youtube {
+            color: #FF0000; }
+          header .nav-flexbox__box--social-network__box--discord {
+            color: #7289da; }
+
+main {
+  margin: 6rem 0rem 0rem 0rem; }
+  main .page-title {
+    font-size: 3rem;
+    text-align: center; }
+  main .trailer-container {
+    text-align: center;
+    margin: 1rem 0rem 2rem 0rem; }
+  main .game-description {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 4rem 0.5rem 2rem 0.5rem; }
+    main .game-description__color--1 {
+      color: white;
+      text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 0px 0px rgba(229, 229, 229, 0); }
+    main .game-description__color--2 {
+      color: red; }
+    main .game-description__color--3 {
+      color: #DDBCBD;
+      text-shadow: 0px 11px 20px #E5E5E5; }
+  main .button-primary {
+    text-align: center;
+    height: 5rem; }
+    main .button-primary__push {
+      font-size: 5rem;
+      border-radius: 2rem;
+      background-color: #0F5BC7;
+      color: #DDBCBD; }
+
+footer {
+  width: 100%;
+  background-color: #CBC1C2;
+  color: #0F5BC7;
+  height: 10rem; }

@@ -1,0 +1,12 @@
+{
+  "name": "dark-times__web",
+  "version": "1.0.0",
+  "description": "Dark Times The game The Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "Simon Froger",
+  "license": "ISC"
+}
