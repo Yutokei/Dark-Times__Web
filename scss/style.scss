@@ -53,6 +53,7 @@ header
             background-position: left;
             background-size: 0rem 0rem;
             background-repeat: no-repeat;
+            animation: nav-hover-after .3 both ease;
             &:hover 
             {
                 animation: nav-hover-effect .5s both ease;
@@ -68,6 +69,20 @@ header
     {
         background-size: 100% 40%;
         transform: scale(1.2) skew(10deg, -0.1deg);
+    }
+}
+@keyframes nav-hover-after
+{
+    from
+    {
+        background-size: 100% 40%;
+        transform: scale(1.2) skew(10deg, -0.1deg);
+    }
+    to
+    {
+
+        background-size: 0.2rem 1.5rem ;
+        transform: scale(1);
     }
 }
 
